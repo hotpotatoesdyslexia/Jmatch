@@ -1384,7 +1384,7 @@ function StartUp(){
 
 function ShowClue(ItemNum){
 	if (Locked == true){return;}
-	State[ItemNum].ClueGiven = true;
+//	State[ItemNum].ClueGiven = true;
 	ShowMessage(I[ItemNum][2]);
 }
 
@@ -1440,7 +1440,7 @@ function CheckAnswers(){
 			}
 			else{
 //Otherwise, increment the hints for this item, as a penalty
-				State[i].HintsAndChecks++;
+//				State[i].HintsAndChecks++;
 
 //then set the flag
 				AllCorrect = false;
@@ -1634,7 +1634,7 @@ function ShowHint(){
 
 	if (HintString.length > 0){
 		SetGapValue(CurrGap, HintString);
-		State[CurrGap].HintsAndChecks += 1;
+//		State[CurrGap].HintsAndChecks += 1;
 	}
 	ShowMessage(GiveHint);
 }
@@ -1746,7 +1746,7 @@ function DownTime(){
 </div>
 
 <div id="InstructionsDiv" class="StdDiv">
-	<div id="Instructions">Fill in all the gaps, then press "Check" to check your answers. Use the "Hint" button to get a free letter if an answer is giving you trouble. You can also click on the "[?]" button to get a clue. Note that you will lose points if you ask for hints or clues!</div>
+	<div id="Instructions">Fill in all the gaps, then press "Check" to check your answers. Use the "Hint" button to get a free letter if an answer is giving you trouble. You can also click on the "[?]" button to get a clue. <!-- Note that you will lose points if you ask for hints or clues! --></div>
 </div>
 
 
